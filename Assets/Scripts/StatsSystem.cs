@@ -22,9 +22,9 @@ public class StatsSystem : MonoBehaviour
     {
         // set out agility, strength and intelligence to a random number between zero and ten.
         // BONUS! let's try taking our stats away from a pool of stats, i.e. 20 total, distributing this amoungst all the stats.
-        strength = 0;
-        agility = 0;
-        intelligence = 0;
+        strength = random.Range (0, 11);
+        agility = random.Range (0, 11);
+        intelligence = random.Range (0, 11);
 
         // Debug out your current physical stat values (strength, agility, intelligence).
 
