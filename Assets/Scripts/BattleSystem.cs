@@ -35,9 +35,9 @@ public class BattleSystem : MonoBehaviour
 
         // calculate the percentage chance of winning the fight for each character.
         // todo this you'll need to add the two powers together, then divide you characters power against this and multiply the result by 100.
-        int totalPower = playerOnePowerLevel + playerTwoPowerLevel / 2 * 100;
-        int playerOneChanceToWin = playerOnePowerLevel / 2 * 100;
-        int playerTwoChanceToWin = playerTwoPowerLevel / 2 * 100;
+        int totalPower = playerOnePowerLevel + playerTwoPowerLevel / 2;
+        int playerOneChanceToWin = playerOnePowerLevel * 100;
+        int playerTwoChanceToWin = playerTwoPowerLevel * 100;
 
         // Debug out the chance of each character to win.
         Debug.Log("playerOne has =" + playerOneChanceToWin);
