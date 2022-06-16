@@ -52,6 +52,7 @@ public class BattleSystem : MonoBehaviour
 >>>>>>> Stashed changes
 
         // We probably want to compare the powers of our characters and decide who has a higher power level; I just hope they aren't over 9000.  
+        // Debug out which character has won, which has lost, or if it's a draw. 
         if (playerOnePowerLevel > playerTwoPowerLevel)
         {
             Debug.Log ("player One WINS");
@@ -60,8 +61,12 @@ public class BattleSystem : MonoBehaviour
         {
             Debug.Log("player Two WINS");
         }
+        else if (playerOnePowerLevel==playerTwoPowerLevel)
+        {
+            Debug.Log("This battle is a draw,");
+        }
             
-        // Debug out which character has won, which has lost, or if it's a draw. 
+        
         // Debug out how much experience they should gain based on the difference of their chances to win, or if it's a draw award a default amount.
     }
 }
