@@ -39,7 +39,7 @@ public class StatsSystem : MonoBehaviour
         float strengthMultiplier = 1;
         
         // create an intelligence multiplier should be set to 2.
-        float intelligenceMultiplier = 1.5f;
+        float intelligenceMultiplier = 2;
        
         // Debug out our current multiplier values.
         Debug.Log("Strength Multiplier Value =" + strengthMultiplier);
