@@ -16,15 +16,17 @@ public class LevellingSystem : MonoBehaviour
     private void Start()
     {
         // set our current level to one.
-
+        public int level = 1;
         // set our current XP to zero
-
+        public float xp = 0;
         // set our current XP Threshold to be our level multiplied by our 100.
-        
+        public float SetXpForNextLevel = 100;
         // Debug out our starting values of our level, xp and current xp threshold
-
+        Debug.Log("player level is," + level);
+        Debug.Log("player xp is," + xp);
+        Debug.log("current xp is" + xpForNextLevel);
         // Increase the current XP by one hundred.
-
+        XpForNextLevel = (100f + (level * level * 0.1f * level);
         // Debug out our current XP.
 
         // check if our current XP is more than our threshold.
