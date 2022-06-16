@@ -35,7 +35,12 @@ public class StatsSystem : MonoBehaviour
         // create a strength multiplier should be set to 1
 
         // create an intelligence multiplier should be set to 2.
+<<<<<<< Updated upstream
 
+=======
+        float intelligenceMultiplier = 2;
+        
+>>>>>>> Stashed changes
         // Debug out our current multiplier values.
 
         // now that we have some stats and our multiplier values let's calculate our style, luck and ryhtmn based on these values.
@@ -48,15 +53,33 @@ public class StatsSystem : MonoBehaviour
         rhythm = 0;
 
         // Debug out our current dancing stat values (style, luck, rhythm)
+<<<<<<< Updated upstream
+=======
+        Debug.Log("Style =" + style);
+        Debug.Log("Luck =" + luck);
+        Debug.Log("Rhythm =" + rhythm);
+>>>>>>> Stashed changes
 
         // now let's imagine that our level has increased; and we've been granted 10 new stat points.
         // let's distribute those stats amoungst our strength and agility and intelligence.
         int additionalPoints = 10;
 
         // Debug out our new physical stat values
+<<<<<<< Updated upstream
 
         // let's recalculate our style, luck and rhytmn as our initial stats have changed.
         
+=======
+        Debug.Log("Level Up, your Strength is now =" + levelStrength);
+        Debug.Log("Level Up, your Agility is now =" + levelAgility); 
+        Debug.Log("Level Up, your Intelligence is now =" + levelIntelligence);
+
+        // let's recalculate our style, luck and rhytmn as our initial stats have changed.
+        int newStyle = (int)(levelStrength * strengthMultiplier);
+        int newLuck = (int)(levelIntelligence * intelligenceMultiplier);
+        int newRythm = (int)(levelAgility * agilityMultiplier); 
+
+>>>>>>> Stashed changes
         // Debug out our new dancing stat values
     }
 }

@@ -30,6 +30,11 @@ public class BattleSystem : MonoBehaviour
         public int playerTwoPowerLevel = playerTwoLuck + playerTwoStyle + playerTwoRyhtm;
 
         // Debug out the two players, power levels.
+<<<<<<< Updated upstream
+=======
+        Debug.Log("playerOne power level is" + playerOnePowerLevel);
+        Debug.Log("playerTwo power level is" + playerTwoPowerLevel);
+>>>>>>> Stashed changes
 
         // calculate the percentage chance of winning the fight for each character.
         // todo this you'll need to add the two powers together, then divide you characters power against this and multiply the result by 100.
@@ -38,10 +43,25 @@ public class BattleSystem : MonoBehaviour
         int playerTwoChanceToWin = 0;
 
         // Debug out the chance of each character to win.
+<<<<<<< Updated upstream
 
         // We probably want to compare the powers of our characters and decide who has a higher power level; I just hope they aren't over 9000.  
+=======
+        Debug.Log("playerOne has =" + playerOneChanceToWin);
+        Debug.Log("playerTwo has =" + playerTwoChanceToWin);
+>>>>>>> Stashed changes
 
-            // Debug out which character has won, which has lost, or if it's a draw. 
-            // Debug out how much experience they should gain based on the difference of their chances to win, or if it's a draw award a default amount.
+        // We probably want to compare the powers of our characters and decide who has a higher power level; I just hope they aren't over 9000.  
+        if (playerOnePowerLevel > playerTwoPowerLevel)
+        {
+            Debug.Log ("player One WINS");
+        }
+        else if (playerTwoPowerLevel > playerOnePowerLevel)
+        {
+            Debug.Log("player Two WINS");
+        }
+            
+        // Debug out which character has won, which has lost, or if it's a draw. 
+        // Debug out how much experience they should gain based on the difference of their chances to win, or if it's a draw award a default amount.
     }
 }
