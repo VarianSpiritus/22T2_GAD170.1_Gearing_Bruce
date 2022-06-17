@@ -38,7 +38,7 @@ public class LevellingSystem : MonoBehaviour
         // check if our current XP is more than our threshold.
         if (xpGain > currentXp)
         {
-            Debug.log("Level up");
+            Debug.Log("Level up");
         }
         // if it is, then let's increase out level by one.
         if (currentXpThreshold > currentXp)
